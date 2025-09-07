@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 /* Global styles */
@@ -23,7 +23,7 @@
 body {
   background: #072c27; /* same as the mock background */
   color: var(--white);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .page {
