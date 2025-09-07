@@ -8,7 +8,7 @@
   --accent: #006241;
   --white: #ffffff;
   --muted: #9fb8a8;
-  --nav-max: 1100px; /* centers the inner content */
+  /* --nav-max: 1100px;  */
 }
 
 /* Navbar wrapper (full width) */
@@ -117,8 +117,8 @@
 }
 
 /* small responsive helper: if window is very narrow, shrink the pill a bit */
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .nav-inner { padding: 0 8px; }
   .nav-center .nav-pill { gap: 6px; padding: 6px 8px; }
   .nav-item { padding: 6px 8px; font-size: 13px; }
-}
+} */

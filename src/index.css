@@ -23,6 +23,7 @@
 body {
   background: #072c27; /* same as the mock background */
   color: var(--white);
+  overflow-x: hidden;
 }
 
 .page {
