@@ -8,36 +8,52 @@ import leaf from "../assets/bean3.png";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" role="region" aria-label="Hero">
       <div className="hero-content">
-        {/* Left side - text */}
+        {/* LEFT - text */}
         <div className="hero-left">
-          <h1>
-            It's not just <br />
-            <span>Coffee</span>
+          <h1 className="hero-title">
+            It's not just <span>Coffee</span>
           </h1>
-          <h2>It's Starbucks</h2>
-          <p>
+          <h2 className="hero-sub">It's Starbucks</h2>
+
+          <p className="hero-desc">
             Discover your favorite coffee drinks and enjoy the rich flavors
             crafted with love. Experience the aroma of perfection in every sip.
           </p>
-          <button className="cta-btn">Order Now</button>
+
+          <div className="hero-actions">
+            <button className="cta-btn">Order Now</button>
+            <button className="ghost-btn">Learn More</button>
+          </div>
         </div>
 
-        {/* Right side - main cup */}
-        <div className="hero-right">
-          <img src={cupMain} alt="Starbucks Coffee" className="cup-main" />
-          <img src={beansLeft} alt="Coffee beans" className="beans beans-left" />
-          <img src={beansRight} alt="Coffee beans" className="beans beans-right" />
-          <img src={leaf} alt="Coffee leaf" className="leaf" />
-        </div>
-      </div>
+        {/* RIGHT - product visual */}
+        <div className="hero-right" aria-hidden="false">
+          {/* soft circular backdrop */}
+          <div className="cup-bg" />
 
-      {/* Bottom thumbnails */}
-      <div className="hero-thumbnails">
-        <img src={cupMain} alt="Thumb 1" />
-        <img src={cupMain} alt="Thumb 2" />
-        <img src={cupMain} alt="Thumb 3" />
+          {/* decorative images */}
+          <img src={beansLeft} alt="" className="beans beans-left" />
+          <img src={beansRight} alt="" className="beans beans-right" />
+          <img src={leaf} alt="" className="leaf" />
+
+          {/* main cup (forefront) */}
+          <img src={cupMain} alt="Coffee cup" className="cup-main" />
+          
+          {/* thumbnails (placed below the cup, overlapping slightly) */}
+          <div className="thumbs">
+            <div className="thumb-card active">
+              <img src={cupMain} alt="thumb 1" />
+            </div>
+            <div className="thumb-card">
+              <img src={cupMain} alt="thumb 2" />
+            </div>
+            <div className="thumb-card">
+              <img src={cupMain} alt="thumb 3" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
