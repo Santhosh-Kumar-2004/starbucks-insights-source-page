@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* Global styles */
@@ -14,19 +14,19 @@
   --accent: #0e8b4a;
   --white: #fff;
   --muted: #9fb8a8;
-  --container-w: 800px;
+  /* --container-w: 800px; */
   --radius-lg: 18px;
   --space: 16px;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: #e9e9e6; /* same as the mock background */
+  background: #072c27; /* same as the mock background */
   color: var(--white);
 }
 
 .page {
-  width: var(--container-w);
+  /* width: var(--container-w); */
   margin: 0 auto;
   background: var(--deep-green);
   min-height: 100vh;
