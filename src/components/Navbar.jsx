@@ -2,7 +2,7 @@
 import React from "react";
 import { FiUser, FiShoppingCart } from "react-icons/fi";
 import "../styles/Navbar.css";
-import logo from "../assets/logo.svg"; // put your logo here (SVG or PNG)
+import logo from "../assets/starbucks.svg"; // put your logo here (SVG or PNG)
 
 export default function Navbar() {
   return (
