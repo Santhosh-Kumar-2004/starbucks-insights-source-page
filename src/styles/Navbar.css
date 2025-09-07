@@ -51,10 +51,10 @@
 /* Center pill nav */
 .nav-center .nav-pill {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
   background: var(--white);
-  padding: 16px 30px;
+  padding: 12px 30px;
   border-radius: 9999px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.25);
 }
