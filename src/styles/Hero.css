@@ -1,0 +1,120 @@
+/* src/components/Hero.css */
+.hero {
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 60px;
+  background: var(--deep-green);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Content area */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Left text */
+.hero-left {
+  max-width: 500px;
+  color: var(--white);
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-left h1 span {
+  color: var(--green);
+}
+
+.hero-left h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.hero-left p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  color: var(--muted);
+}
+
+.cta-btn {
+  background: var(--green);
+  color: var(--white);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Right image */
+.hero-right {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.cup-main {
+  width: 380px;
+  z-index: 2;
+  position: relative;
+}
+
+.beans,
+.leaf {
+  position: absolute;
+  width: 120px;
+  opacity: 0.9;
+}
+
+.beans-left {
+  top: 10%;
+  left: -80px;
+}
+
+.beans-right {
+  bottom: 15%;
+  right: -80px;
+}
+
+.leaf {
+  bottom: -20px;
+  left: 30%;
+  width: 160px;
+}
+
+/* Bottom thumbnails */
+.hero-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.hero-thumbnails img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.4));
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hero-thumbnails img:hover {
+  transform: scale(1.1);
+}
