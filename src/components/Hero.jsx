@@ -2,9 +2,9 @@
 import React from "react";
 import "../styles/Hero.css";
 import cupMain from "../assets/coffee_cup.png";
-import beansLeft from "../assets/beans1.png";
-import beansRight from "../assets/beans2.png";
-import leaf from "../assets/beans3.png";
+import beansLeft from "../assets/bean1.png";
+import beansRight from "../assets/bean2.png";
+import leaf from "../assets/bean3.png";
 
 export default function Hero() {
   return (

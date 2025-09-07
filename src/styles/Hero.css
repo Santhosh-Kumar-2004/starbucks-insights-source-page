@@ -1,7 +1,7 @@
 /* src/components/Hero.css */
 .hero {
-  width: 100vw;
-  min-height: 90vh;
+  /* width: 100vw; */
+  /* min-height: 90vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
