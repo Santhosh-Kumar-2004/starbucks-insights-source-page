@@ -23,11 +23,11 @@ export default function Navbar() {
 
         <div className="nav-right">
           <button className="icon-btn" aria-label="Account">
-            <FiUser size={18} />
+            <FiUser size={24} className="icon"/>
           </button>
 
           <button className="icon-btn cart" aria-label="Cart">
-            <FiShoppingCart size={18} />
+            <FiShoppingCart size={18} className="icon"/>
           </button>
         </div>
       </div>

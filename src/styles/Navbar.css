@@ -15,7 +15,7 @@
 .navbar {
   width: 100vw;                         /* full viewport width as you requested */
   background: transparent;
-  padding: 18px 24px;
+  padding: 28px 34px;
   display: flex;
   justify-content: center;              /* center the inner content */
   position: relative;
@@ -34,8 +34,8 @@
 
 /* Left logo */
 .nav-left .logo {
-  width: 46px;
-  height: 46px;
+  width: 66px;
+  /* height: 46px; */
   object-fit: contain;
   display: block;
   border-radius: 50%;
@@ -43,13 +43,18 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.35);
 }
 
+.logo:hover {
+  transform: scale(1.08);
+  transition: transform .12s ease;
+}
+
 /* Center pill nav */
 .nav-center .nav-pill {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
   background: var(--white);
-  padding: 6px 10px;
+  padding: 16px 30px;
   border-radius: 9999px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.25);
 }
@@ -60,7 +65,7 @@
   text-decoration: none;
   color: var(--deep-green);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   padding: 8px 12px;
   border-radius: 9999px; /* inner pill look for active */
   transition: transform .12s ease, background-color .12s ease;
@@ -71,11 +76,13 @@
   background: var(--green);
   color: var(--white);
   box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+  padding: 10px 20px;
 }
 
 /* hover */
 .nav-item:hover {
-  transform: translateY(-1px);
+  transform: translateY(-3px);
+  /* transform: (-3px); */
 }
 
 /* Right icons */
@@ -87,8 +94,8 @@
 
 /* simple round icon button */
 .icon-btn {
-  width: 40px;
-  height: 40px;
+  width: 66px;
+  height: 66px;
   border-radius: 50%;
   border: none;
   display: inline-flex;
@@ -99,6 +106,7 @@
   color: var(--white);
   transition: transform .12s ease, background-color .12s ease;
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  font-size: 24px;
 }
 
 /* make the cart more prominent like in the mock */
@@ -114,6 +122,12 @@
 
 .icon-btn.cart:hover {
   filter: brightness(1.04);
+}
+
+.icon {
+    font-size: 24px;
+    /* size: 20px;
+    width: 20px; */
 }
 
 /* small responsive helper: if window is very narrow, shrink the pill a bit */
