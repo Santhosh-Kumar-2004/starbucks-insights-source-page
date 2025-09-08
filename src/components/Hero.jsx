@@ -42,7 +42,7 @@ export default function Hero() {
           <img src={cupMain} alt="Coffee cup" className="cup-main" />
           
           {/* thumbnails (placed below the cup, overlapping slightly) */}
-          <div className="thumbs">
+          {/* <div className="thumbs">
             <div className="thumb-card active">
               <img src={cupMain} alt="thumb 1" />
             </div>
@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="thumb-card">
               <img src={cupMain} alt="thumb 3" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
