@@ -16,7 +16,7 @@ export default function Hero() {
           <h1 className="hero-title">
             It's not just <span>Coffee</span>
           </h1>
-          <h2 className="hero-sub">It's Starbucks</h2>
+          <h2 className="hero-sub">Frappucino Coffee Delight</h2>
 
           <p className="hero-desc">
             Discover your favorite coffee drinks and enjoy the rich flavors
