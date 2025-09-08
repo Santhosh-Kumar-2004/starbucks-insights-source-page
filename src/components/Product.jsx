@@ -18,29 +18,36 @@ const products = [
 const Product = () => {
   return (
     <section className="hero">
-      <Swiper
-        modules={[Navigation]}
-        navigation
-        spaceBetween={30}
-        slidesPerView={3}
-        centeredSlides={true}
-        className="hero-swiper"
-      >
-        {products.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className={`card ${item.featured ? "featured" : ""}`}>
-              <img src={coffeeImage} alt={item.name} />
-              <h3>{item.name}</h3>
-              <div className="options">
-                <p>Milk: Options</p>
-                <p>Cream: Options</p>
-                <p>Toppings: Options</p>
+      <div className="hero-container">
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          spaceBetween={30}
+          slidesPerView={3}
+          centeredSlides={true}
+          loop={true}
+          className="hero-swiper"
+        >
+          {products.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className={`card ${item.featured ? "featured" : ""}`}>
+                <div className="card-image">
+                  <img src={coffeeImage} alt={item.name} />
+                </div>
+                <div className="card-content">
+                  <h3 className="card-title">{item.name}</h3>
+                  <ul className="options-list">
+                    <li>Milk: Options</li>
+                    <li>Cream: Options</li>
+                    <li>Toppings: Options</li>
+                  </ul>
+                  <button className="add-btn">Add to Cart</button>
+                </div>
               </div>
-              <button className="add-btn">Add to Cart</button>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };
