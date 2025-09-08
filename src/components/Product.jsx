@@ -64,7 +64,7 @@ const Product = () => {
             <SwiperSlide key={index}>
               <div className={`product-card ${item.featured ? "featured" : ""}`}>
                 <div className="card-image">
-                  <img src={coffeeImage} alt={item.name} />
+                  <img src={coffeeImage} alt={item.name} className="blob"/>
                 </div>
                 <div className="card-content">
                   <h3 className="card-title">{item.name}</h3>
