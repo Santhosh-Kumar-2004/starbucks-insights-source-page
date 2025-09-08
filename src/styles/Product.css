@@ -1,0 +1,68 @@
+.hero {
+  background: var(--dark-green); /* from your index.css theme */
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-swiper {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.card {
+  background: var(--light-bg);
+  border-radius: 20px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: var(--dark-green);
+  margin-bottom: 1rem;
+}
+
+.card .options {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.add-btn {
+  background: var(--primary-green);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background: var(--primary-green-dark);
+}
+
+.card.featured {
+  transform: scale(1.1);
+  background: var(--primary-green);
+  color: #fff;
+}
+
+.card.featured h3 {
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
