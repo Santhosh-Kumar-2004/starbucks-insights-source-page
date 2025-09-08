@@ -26,6 +26,7 @@
   margin-bottom: 60px;
 
   border-radius: 15% 0% 50% 0%;
+  margin-top: 30px;
 }
 
 .category-list {
@@ -99,7 +100,7 @@
 
 /* Product Card Styling */
 .product-card {
-  background-color: #2e4a4e; /* Slightly lighter dark green for cards */
+  background-color: var(--green); /* Slightly lighter dark green for cards */
   border-radius: 15px;
   text-align: center;
   padding: 25px 20px 15px 20px;
@@ -112,6 +113,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 480px; /* Ensure consistent height */
+  /* color: whi; */
 }
 
 .product-swiper .swiper-slide-active .product-card {
@@ -123,10 +125,21 @@
 }
 
 .card-image {
+  position: relative; /* so pseudo elements stay inside */
   width: 100%;
   max-width: 200px;
   height: auto;
   margin-bottom: 20px;
+  z-index: 1; /* keep image on top */
+}
+
+.card-image::before,
+.card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-image img {
@@ -136,7 +149,14 @@
 }
 
 .card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;.card-image {
+  position: relative; /* so pseudo elements stay inside */
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  z-index: 1; /* keep image on top */
+}
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 15px;
@@ -204,19 +224,20 @@
 
 /* Featured Card Specific Styling */
 .product-card.featured {
-  background-color: #00704a; /* Dark green for the featured card */
-  color: #fff; /* White text for featured card */
+  background-color: var(--green); /* Dark green for the featured card */
+  color: var(--green);
   border: none;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .product-card.featured .card-title {
-  color: #fff;
+  /* color: var(--green); */
+  color: #fff; /* White title for featured card */
 }
 
 .product-card.featured .option-item {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.4); /* White dashed line */
-  color: #e0e0e0;
+  /* color: #e0e0e0; */
 }
 .product-card.featured .option-value {
   color: #a0d8a0; /* Lighter green for options value */
