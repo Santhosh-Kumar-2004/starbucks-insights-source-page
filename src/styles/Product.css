@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600&display=swap');
 
 .product-page {
-  background-color: #1a3236; /* Dark green background */
+  /* background-color: #1a3236;  */
   min-height: 100vh;
   padding: 0 0 60px 0; /* Adjust padding as needed */
   font-family: 'Poppins', sans-serif;
