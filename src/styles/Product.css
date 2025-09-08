@@ -116,6 +116,18 @@
   /* color: whi; */
 }
 
+.product-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Subtle overlay for depth */
+    border-radius: 15px;
+    z-index: -1; /* Behind card content */
+}
+
 .product-swiper .swiper-slide-active .product-card {
   transform: scale(1); /* Full size for active/centered card */
   opacity: 1; /* Full opacity for active card */
@@ -201,7 +213,21 @@
 .card-image img {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
+
+.card-image::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 220px;
+  height: 160px;
+  background: var(--deep-green);
+  clip-path: polygon(0 0, 100% 15%, 85% 100%, 0 85%);
+  transform: translateX(-50%);
+  opacity: 0.8
 }
 
 .card-title {
