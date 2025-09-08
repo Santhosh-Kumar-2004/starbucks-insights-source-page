@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   /* background-color: #f8f8f8; */
-  padding: 20px;
+  /* padding: 20px; */
   overflow: hidden;
   position: relative;
 }
@@ -40,7 +40,11 @@
   line-height: 1.2;
   text-transform: uppercase;
 }
-
+.hero-first {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  /* top: 20%; */
+}
 .hero-title span {
   color: var(--green);
   position: relative;
@@ -116,21 +120,25 @@
 /* Circular backdrop behind the cup */
 .cup-bg {
   position: absolute;
-  width: 450px;
-  height: 450px;
-  background-color: #e0e0e0;
-  border-radius: 50%;
+  width: 600px;
+  height: 490px;
+  background-color: var(--accent);
+  border-radius: 20%;
   z-index: 1;
   opacity: 0.6;
+  right: -51%;
+  top: 8%;
 }
 
 /* Main coffee cup image */
 .cup-main {
-  width: 500px;
+  width: 450px;
   position: relative;
   z-index: 5;
   filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.2));
-  animation: float 4s ease-in-out infinite;
+  /* animation: float 4s ease-in-out infinite; */
+  right: -12%;
+  top: -5%;
 }
 
 /* Decorative images (beans and leaf) */

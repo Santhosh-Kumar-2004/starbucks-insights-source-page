@@ -12,9 +12,9 @@ export default function Hero() {
       <div className="hero-content">
         {/* LEFT - text */}
         <div className="hero-left">
-          <h4>Where every Cup tells a Story.</h4>
+          <h4 className="hero-first">Where every Cup tells a Story.</h4>
           <h1 className="hero-title">
-            It's not just <span>Coffee</span>
+            WHAT'S<span>YOURS?</span>
           </h1>
           <h2 className="hero-sub">Frappucino Coffee Delight</h2>
 
