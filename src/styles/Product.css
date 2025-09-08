@@ -1,68 +1,351 @@
-.hero {
-  background: var(--dark-green); /* from your index.css theme */
-  padding: 4rem 0;
+/* Product.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600&display=swap');
+
+.product-page {
+  background-color: #1a3236; /* Dark green background */
+  min-height: 100vh;
+  padding: 0 0 60px 0; /* Adjust padding as needed */
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Navigation / Category Bar */
+.product-navbar {
+  background-color: #00704a; /* Starbucks green */
+  padding: 15px 0;
+  margin-bottom: 60px;
+}
+
+.category-list {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.hero-swiper {
-  width: 90%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
-.card {
-  background: var(--light-bg);
-  border-radius: 20px;
-  text-align: center;
-  padding: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.card h3 {
-  font-size: 1.2rem;
-  color: var(--dark-green);
-  margin-bottom: 1rem;
-}
-
-.card .options {
+.category-item {
+  position: relative;
+  padding: 10px 25px;
+  font-weight: 600;
   font-size: 0.9rem;
-  color: var(--text-color);
-  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #c8e6c9; /* Lighter green for inactive */
+  text-transform: uppercase;
 }
 
-.add-btn {
-  background: var(--primary-green);
+.category-item.active {
   color: #fff;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 25px;
+  background-color: #004d33; /* Darker green for active tab background */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-item.active::before { /* Rounded tab effect */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px; /* Adjust to extend the curve */
+  width: 40px;
+  height: 100%;
+  background-color: #004d33;
+  border-radius: 0 50% 50% 0;
+  transform: translateX(-50%);
+  z-index: -1;
+  display: none; /* Hide for now, can be used for a more complex curve */
+}
+.category-item.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -20px; /* Adjust to extend the curve */
+  width: 40px;
+  height: 100%;
+  background-color: #004d33;
+  border-radius: 50% 0 0 50%;
+  transform: translateX(50%);
+  z-index: -1;
+  display: none; /* Hide for now */
+}
+
+
+/* Product Carousel Wrapper */
+.product-carousel-wrapper {
+  position: relative;
+  max-width: 1300px; /* Wider than individual cards to show more of side cards */
+  margin: 0 auto;
+  padding: 0 60px; /* Space for navigation arrows */
+}
+
+/* Swiper container */
+.product-swiper {
+  padding: 20px 0; /* Vertical padding for cards */
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #2e4a4e; /* Slightly lighter dark green for cards */
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px 20px 15px 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  transform: scale(0.9); /* Smaller for non-centered cards */
+  opacity: 0.7; /* Dimmer for non-centered cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 480px; /* Ensure consistent height */
+}
+
+.product-swiper .swiper-slide-active .product-card {
+  transform: scale(1); /* Full size for active/centered card */
+  opacity: 1; /* Full opacity for active card */
+  background-color: #fff; /* White background for active card */
+  color: #333; /* Dark text for active card */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: inherit; /* Inherit color from parent (.product-card) */
+}
+
+/* Options List Styling */
+.options-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3); /* Dashed line for dark cards */
+  color: #e0e0e0;
+}
+.product-swiper .swiper-slide-active .option-item {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2); /* Dashed line for active card */
+  color: #666;
+}
+
+
+.option-label {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.option-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #6f4e37; /* Coffee brown for options value */
   cursor: pointer;
-  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.option-value .fa-chevron-down {
+  font-size: 0.7rem;
+}
+
+/* Add to Cart Button for regular cards */
+.add-btn {
+  background-color: #00704a; /* Starbucks green */
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 112, 74, 0.3);
+  margin-top: auto; /* Push button to the bottom */
 }
 
 .add-btn:hover {
-  background: var(--primary-green-dark);
+  background-color: #005a3b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 112, 74, 0.4);
 }
 
-.card.featured {
-  transform: scale(1.1);
-  background: var(--primary-green);
+/* Featured Card Specific Styling */
+.product-card.featured {
+  background-color: #00704a; /* Dark green for the featured card */
+  color: #fff; /* White text for featured card */
+  border: none;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.product-card.featured .card-title {
   color: #fff;
 }
 
-.card.featured h3 {
-  color: #fff;
+.product-card.featured .option-item {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.4); /* White dashed line */
+  color: #e0e0e0;
+}
+.product-card.featured .option-value {
+  color: #a0d8a0; /* Lighter green for options value */
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+/* Add to Cart Button for Featured Card */
+.add-btn-featured {
+  background-color: #fff; /* White button for featured card */
+  color: #00704a; /* Green text */
+  border: none;
+  padding: 12px 30px; /* Slightly larger button */
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  margin-top: auto; /* Push button to the bottom */
+}
+
+.add-btn-featured:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+}
+
+
+/* Custom Swiper Navigation Arrows */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; /* Larger hit area for arrows */
+  height: 50px;
+  background-color: #00704a; /* Starbucks green */
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  background-color: #005a3b;
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.swiper-button-prev-custom {
+  left: 0;
+}
+
+.swiper-button-next-custom {
+  right: 0;
+}
+
+/* Hide default Swiper navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .product-page {
+    padding-bottom: 40px;
+  }
+  .product-carousel-wrapper {
+    padding: 0 40px;
+  }
+  .product-card {
+    min-height: 450px;
+    padding: 20px 15px 10px 15px;
+  }
+  .card-title {
+    font-size: 1.6rem;
+  }
+  .option-item, .add-btn, .add-btn-featured {
+    font-size: 0.85rem;
+  }
+  .add-btn-featured {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-navbar {
+    padding: 10px 0;
+    margin-bottom: 40px;
+  }
+  .category-item {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+  .product-carousel-wrapper {
+    padding: 0 20px;
+  }
+  .product-card {
+    min-height: 400px;
+  }
+  .card-title {
+    font-size: 1.4rem;
+  }
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    width: 40px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-navbar {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  .category-list {
+    justify-content: flex-start;
+    padding: 0 10px;
+  }
+  .product-carousel-wrapper {
+    padding: 0 10px;
+  }
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    display: none; /* Hide custom arrows on very small screens if they crowd content */
+  }
+  .product-card {
+    padding: 15px 10px;
+    min-height: 350px;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
 }
