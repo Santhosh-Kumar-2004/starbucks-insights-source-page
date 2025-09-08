@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../styles/Product.css";
 
-import coffeeImage from "../assets/coffee.jpg"; // use your single image
+import coffeeImage from "../assets/coffee_cup2.png"; // use your single image
 
 const products = [
   { name: "Caramel Latte" },
