@@ -39,16 +39,19 @@
   margin-bottom: 0;
   line-height: 1.2;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .hero-first {
   font-size: 1.7rem;
   text-transform: uppercase;
+  /* margin-bottom: 20px; */
   /* top: 20%; */
 }
 .hero-title span {
   color: var(--green);
   position: relative;
   white-space: nowrap;
+  /* margin-bottom: 90px; */
 }
 
 .hero-sub {
@@ -60,8 +63,8 @@
 }
 
 .hero-desc {
-  font-size: 1.1rem;
-  color: #777;
+  font-size: 1rem;
+  color: white;
   line-height: 1.6;
   max-width: 500px;
   margin-bottom: 30px;
@@ -71,6 +74,17 @@
   display: flex;
   gap: 20px;
 }
+
+.hero-rating {
+  font-size: 1.5rem;
+  color: #ffd700;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+
 
 .cta-btn, .ghost-btn {
   padding: 15px 30px;

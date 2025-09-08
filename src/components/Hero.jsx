@@ -4,7 +4,7 @@ import "../styles/Hero.css";
 import cupMain from "../assets/coffee_cup.png";
 import beansLeft from "../assets/bean1_blur.png";
 import leaf from "../assets/coffee_leaf_blur.png";
-import beansRight from "../assets/bean3_blur.png";
+import beansRight from "../assets/bean2_blur.png";
 
 export default function Hero() {
   return (
@@ -21,7 +21,10 @@ export default function Hero() {
           <p className="hero-desc">
             Discover your favorite coffee drinks and enjoy the rich flavors
             crafted with love. Experience the aroma of perfection in every sip.
+            <b>Taste the magic of coffee today!</b>
           </p>
+
+          <h1 className="hero-rating">Best Rating <b className="rate">$9.3</b></h1>
 
           <div className="hero-actions">
             <button className="cta-btn">Order Now</button>
