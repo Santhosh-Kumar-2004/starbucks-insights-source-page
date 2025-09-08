@@ -2,7 +2,7 @@
 
 /* Main Hero Section */
 .hero {
-  width: 100%;
+  /* width: 100%; */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -33,25 +33,25 @@
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
-  color: #333;
+  /* color: #333; */
   margin-bottom: 0;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .hero-title span {
-  color: #6f4e37; /* Coffee brown */
+  color: var(--green);
   position: relative;
   white-space: nowrap;
 }
 
 .hero-sub {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 6px 0 18px 0;
+  color: rgba(255,255,255,0.92);
   font-weight: 600;
-  color: #666;
-  margin-top: 5px;
-  margin-bottom: 20px;
 }
 
 .hero-desc {
