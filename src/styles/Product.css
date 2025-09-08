@@ -285,10 +285,16 @@
 
 /* Add to Cart Button for regular cards */
 .add-btn {
-  background-color: #00704a; /* Starbucks green */
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    z-index: 2;
+    
+    background-color: #00704a; /* Starbucks green */
   color: #fff;
   border: none;
-  padding: 10px 25px;
+  padding: 15px 45px;
   border-radius: 50px;
   cursor: pointer;
   font-weight: 600;
@@ -300,7 +306,7 @@
 
 .add-btn:hover {
   background-color: #005a3b;
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
   box-shadow: 0 6px 20px rgba(0, 112, 74, 0.4);
 }
 
@@ -327,23 +333,30 @@
 
 /* Add to Cart Button for Featured Card */
 .add-btn-featured {
-  background-color: #fff; /* White button for featured card */
-  color: #00704a; /* Green text */
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    z-index: 2;
+
+  background-color: #00704a; /* Starbucks green */
+  color: #fff;
   border: none;
-  padding: 12px 30px; /* Slightly larger button */
+  padding: 15px 45px;; /* Slightly larger button */
   border-radius: 50px;
   cursor: pointer;
   font-weight: 700;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3); */
   margin-top: auto; /* Push button to the bottom */
+
 }
 
 .add-btn-featured:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+  background-color: #005a3b;
+  /* transform: translateY(-2px); */
+  box-shadow: 0 6px 20px rgba(0, 112, 74, 0.4);
 }
 
 

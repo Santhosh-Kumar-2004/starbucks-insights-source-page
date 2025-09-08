@@ -78,9 +78,9 @@ const Product = () => {
                   </div>
                   {/* The featured card will have its own button styling */}
                   {item.featured ? (
-                    <button className="add-btn-featured">Add to Cart</button>
+                    <button className="btn add-btn-featured">Add to Cart</button>
                   ) : (
-                    <button className="add-btn">Add to Cart</button>
+                    <button className="btn add-btn">Add to Cart</button>
                   )}
                 </div>
               </div>
