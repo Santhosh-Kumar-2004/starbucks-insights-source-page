@@ -142,6 +142,62 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* ==============================
+   🎨 OPTION 1: Gradient Circle Glow
+   ============================== */
+.card-image.circle-glow::before {
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle at center, #1b5e20, #004d40);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+
+/* ==============================
+   🎨 OPTION 2: Abstract Blob Shape
+   ============================== */
+.card-image.blob::before {
+  top: 40%;
+  left: 50%;
+  width: 220px;
+  height: 180px;
+  background: linear-gradient(135deg, #43a047, #2e7d32);
+  border-radius: 55% 45% 60% 40% / 40% 55% 45% 60%;
+  transform: translate(-50%, -50%) rotate(15deg);
+  opacity: 0.7;
+}
+
+/* ==============================
+   🎨 OPTION 3: Diagonal Polygon
+   ============================== */
+.card-image.polygon::before {
+  top: 10%;
+  left: 50%;
+  width: 220px;
+  height: 160px;
+  background: #1b5e20;
+  clip-path: polygon(0 0, 100% 15%, 85% 100%, 0 85%);
+  transform: translateX(-50%);
+  opacity: 0.8;
+}
+
+/* ==============================
+   🎨 OPTION 4: Multiple Floating Dots
+   ============================== */
+.card-image.dots::before {
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(#2e7d32 3px, transparent 3px);
+  background-size: 25px 25px;
+  transform: translate(-25%, -25%);
+  opacity: 0.3;
+}
+
 .card-image img {
   width: 100%;
   height: auto;
