@@ -1,11 +1,11 @@
 /* src/components/Hero.css */
 .hero {
-  width: 100vw;
+  width: 100%;
   background: var(--deep-green);
   padding: 60px 6vw;           /* use vw padding so edges breathe on any screen */
   box-sizing: border-box;
   color: var(--white);
-  overflow: visible;
+  overflow: hidden;
 }
 
 /* center content and constrain width visually like the mock */
