@@ -1,7 +1,8 @@
 import React from "react";
 import coffeeImg from "../assets/star_coffee2.png"; // replace with your coffee image
-import arrowLeft from "../assets/arrow-left.png"; 
-import arrowRight from "../assets/arrow-right.png"; 
+import arrowLeft from "../assets/hand_arrow.png"; 
+import arrowRight from "../assets/hand_arrow2.png"; 
+import arrowRight1 from "../assets/hand_arrow3.png"; 
 
 import "../styles/Feature.css"; 
 
