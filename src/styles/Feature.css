@@ -85,24 +85,29 @@
 .feature-text-left {
   top: 50%;
   left: 6%;
+  text-align: start;
 }
 
 .feature-text-right {
   top: 80%;
   right: 5%;
+  text-align: start;
 }
 
 /* Arrows */
 .feature-arrow {
   position: absolute;
-  width: 40px;
+  width: 100px;
   height: auto;
   color: #fff;
 }
+
 .arrow-left {
-  top: 30%;
-  left: 2%;
+  top: 75%;
+  left: 70%;
+  rotate: 180deg;
 }
+
 .arrow-right {
   top: 30%;
   right: 2%;

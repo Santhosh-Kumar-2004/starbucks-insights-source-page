@@ -28,12 +28,12 @@ const FeatureSection = () => {
 
       {/* Editable left paragraph */}
       <p className="feature-text feature-text-left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, officia illum ratione cupiditate atque fugit placeat ipsa, nam error consectetur perspiciatis alias!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, officia illum ratione cupiditate atque fugit placeat ipsa, nam error consectetur!
       </p>
 
       {/* Editable right paragraph */}
       <p className="feature-text feature-text-right">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fugiat quam, facilis minima nisi earum optio libero ad molestias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fugiat quam, facilis minima nisi earum optio libero ad molestias amet consectetur elit.?
       </p>
 
       {/* Left Arrow */}
