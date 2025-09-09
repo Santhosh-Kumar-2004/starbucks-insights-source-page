@@ -4,6 +4,7 @@
   /* padding: 4rem 1rem; */
   overflow: hidden;
   margin-top: 30px;
+  height: 100vh;
 }
 
 /* Big Title */
@@ -47,23 +48,26 @@
 
 /* Tape */
 .feature-tape {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  /* bottom: 0;
+  left: 0; */
   width: 100vw;
   background: var(--accent);
   color: var(--white);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 3rem;
   display: flex;
   justify-content: space-around;
-  padding: 0.5rem 0;
-  transform: rotate(-3deg); /* rotate slightly */
+  padding: 0.8rem 0;
+  transform: rotate(-6deg); /* rotate slightly */
   z-index: 3;
+  margin-top: -9rem;
 }
+
 .feature-tape span {
   white-space: nowrap;
   margin: 0 1rem;
+  /* margin-top: ; */
 }
 
 /* Left & Right Paragraphs */
