@@ -9,7 +9,7 @@ import "../styles/Feature.css";
 const FeatureSection = () => {
   return (
     <section className="feature-section">
-      <h1 className="feature-title">YOUR PERFECT COFFEE</h1>
+      <h1 className="feature-title">UNMATHCED <br /> QUANTITY</h1>
 
       <div className="feature-image-container">
         <img src={coffeeImg} alt="Coffee" className="feature-image" />
