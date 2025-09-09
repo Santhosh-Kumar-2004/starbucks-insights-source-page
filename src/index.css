@@ -24,6 +24,8 @@ body {
   background: #072c27; /* same as the mock background */
   color: var(--white);
   /* overflow-x: hidden; */
+  position: relative; /* Crucial for positioning the pseudo-element */
+  z-index: 1; /* Ensures your content appears above the background */
 }
 
 .page {

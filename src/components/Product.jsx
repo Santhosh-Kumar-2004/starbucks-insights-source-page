@@ -7,7 +7,7 @@ import "swiper/css/navigation"; // Make sure to import navigation styles
 import "../styles/Product.css";
 import { FaChevronLeft, FaChevronRight, FaChevronDown } from "react-icons/fa";
 
-import coffeeImage from "../assets/coffee_cup2.png"; // your single coffee image for all cards
+import coffeeImage from "../assets/star_coffee2.png"; // your single coffee image for all cards
 
 const products = [
   { name: "Caramel Latte", options: ["Milk", "Cream", "Toppings"] },
