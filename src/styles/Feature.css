@@ -14,18 +14,30 @@
   position: relative;
   z-index: 1;
   /* margin-bottom: -6rem; */
+  /* margin-top: -2rem; */
+}
+.feature-title2 {
+  font-size: 7.5rem;
+  font-weight: 800;
+  color: var(--white); /* faint because image is on top */
+  position: relative;
+  z-index: 1;
+  /* margin-bottom: -6rem; */
+  margin-top: -3rem;
 }
 
 .highlight {
-  color: #00704a; /* Starbucks green */
-  /* margin-top: -6rem; */
+  /* color: #00704a;  */
+  color: var(--white); 
+  margin-top: -6rem;
+  letter-spacing: 10px;
 }
 
 /* Coffee Image overlaps the title */
 .feature-image-container {
   position: relative;
   z-index: 2;
-  margin-top: -15rem; 
+  margin-top: -20rem; 
 }
 
 .feature-image {
@@ -39,8 +51,8 @@
   bottom: 0;
   left: 0;
   width: 100vw;
-  background: #fff;
-  color: #000;
+  background: var(--accent);
+  color: var(--white);
   font-weight: bold;
   font-size: 1.2rem;
   display: flex;
