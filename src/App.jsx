@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Product from './components/Product'
+import FeatureSection from './components/Feature';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <Hero />
       <Product />
+      <FeatureSection />
       {/* <div className="page">
         <h1>Starbucks Clone</h1>
       </div> */}
