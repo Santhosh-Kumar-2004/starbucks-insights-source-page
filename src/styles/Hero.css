@@ -188,6 +188,7 @@
   left: 20%;
   width: 100px;
   animation-delay: 0.5s;
+  filter: blur(3px);
 }
 
 .beans-middle {
@@ -198,6 +199,7 @@
   width: 110px;
   animation-delay: 0.5s;
   rotate: 70deg;
+  filter: blur(5px);
 }
 
 .beans-right {
@@ -205,6 +207,7 @@
   right: 9%;
   width: 80px;
   animation-delay: 1s;
+  filter: blur(3px);
 }
 
 .leaf {
@@ -213,6 +216,7 @@
   width: 70px;
   animation-delay: 1.5s;
   rotate: -40deg;
+  filter: blur(3px);
 }
 
 .leaf_left {
@@ -224,6 +228,7 @@
   z-index: -1;  /* push it behind text */
   rotate: 30deg;
   animation: float 5s ease-in-out infinite;
+  filter: blur(3px);
 
 }
 
