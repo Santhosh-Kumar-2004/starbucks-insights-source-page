@@ -1,0 +1,79 @@
+.feature-section {
+  position: relative;
+  text-align: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+
+/* Big Title */
+.feature-title {
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.1); /* faint because image is on top */
+  position: relative;
+  z-index: 1;
+}
+
+/* Coffee Image overlaps the title */
+.feature-image-container {
+  position: relative;
+  z-index: 2;
+  margin-top: -3rem; /* adjust overlap */
+}
+.feature-image {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Tape */
+.feature-tape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  transform: rotate(-3deg); /* rotate slightly */
+  z-index: 3;
+}
+.feature-tape span {
+  white-space: nowrap;
+  margin: 0 1rem;
+}
+
+/* Left & Right Paragraphs */
+.feature-text {
+  position: absolute;
+  width: 250px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff;
+}
+.feature-text-left {
+  top: 40%;
+  left: 5%;
+}
+.feature-text-right {
+  top: 40%;
+  right: 5%;
+}
+
+/* Arrows */
+.feature-arrow {
+  position: absolute;
+  width: 40px;
+  height: auto;
+}
+.arrow-left {
+  top: 30%;
+  left: 2%;
+}
+.arrow-right {
+  top: 30%;
+  right: 2%;
+}
