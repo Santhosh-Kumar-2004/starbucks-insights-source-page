@@ -1,5 +1,5 @@
 import React from "react";
-import coffeeImg from "../assets/coffee.png"; // replace with your coffee image
+import coffeeImg from "../assets/star_coffee2.png"; // replace with your coffee image
 import arrowLeft from "../assets/arrow-left.png"; 
 import arrowRight from "../assets/arrow-right.png"; 
 
