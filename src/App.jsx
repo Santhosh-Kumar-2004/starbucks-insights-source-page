@@ -5,8 +5,17 @@ import Product from './components/Product'
 
 function App() {
 
+  const cursor = document.querySelector(".cursor-follower");
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.top = e.clientY + "px";
+    cursor.style.left = e.clientX + "px";
+  });
+
+
   return (
     <>
+      <div class="cursor-follower"></div>
+
       <Navbar />
       <Hero />
       <Product />
