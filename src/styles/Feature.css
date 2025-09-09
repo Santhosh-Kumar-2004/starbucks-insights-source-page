@@ -8,25 +8,28 @@
 
 /* Big Title */
 .feature-title {
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 800;
   color: var(--white); /* faint because image is on top */
   position: relative;
   z-index: 1;
+  /* margin-bottom: -6rem; */
 }
 
 .highlight {
   color: #00704a; /* Starbucks green */
+  /* margin-top: -6rem; */
 }
 
 /* Coffee Image overlaps the title */
 .feature-image-container {
   position: relative;
   z-index: 2;
-  margin-top: -3rem; /* adjust overlap */
+  margin-top: -15rem; 
 }
+
 .feature-image {
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
 }
 
