@@ -40,6 +40,7 @@ export default function Hero() {
 
           {/* decorative images */}
           <img src={beansLeft} alt="" className="beans beans-left" />
+          <img src={beansLeft} alt="" className="beans beans-middle" />
           <img src={beansRight} alt="" className="beans beans-right" />
           <img src={leaf} alt="" className="leaf" />
 
