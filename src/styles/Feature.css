@@ -1,17 +1,22 @@
 .feature-section {
   position: relative;
   text-align: center;
-  padding: 4rem 1rem;
+  /* padding: 4rem 1rem; */
   overflow: hidden;
+  margin-top: 30px;
 }
 
 /* Big Title */
 .feature-title {
   font-size: 5rem;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.1); /* faint because image is on top */
+  color: var(--white); /* faint because image is on top */
   position: relative;
   z-index: 1;
+}
+
+.highlight {
+  color: #00704a; /* Starbucks green */
 }
 
 /* Coffee Image overlaps the title */
