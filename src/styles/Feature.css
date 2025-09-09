@@ -84,7 +84,7 @@
 
 .feature-text-left {
   top: 50%;
-  left: 5%;
+  left: 6%;
 }
 
 .feature-text-right {
@@ -97,6 +97,7 @@
   position: absolute;
   width: 40px;
   height: auto;
+  color: #fff;
 }
 .arrow-left {
   top: 30%;
