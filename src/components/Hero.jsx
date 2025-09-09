@@ -46,7 +46,7 @@ export default function Hero() {
           {/* main cup (forefront) */}
           <img src={cupMain} alt="Coffee cup" className="cup-main" />
           <h1 className="hero-final">Frappucino</h1>
-          {/* <h1 className="hero-second">Frappucino</h1> */}
+          <h1 className="hero-second">Frappucino</h1>
           
           {/* thumbnails (placed below the cup, overlapping slightly) */}
           {/* <div className="thumbs">

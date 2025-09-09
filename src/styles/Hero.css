@@ -219,9 +219,9 @@
 
 .hero-final {
   position: absolute;
-  top: 39%;
-  right: -30%;
-  font-size: 3.8rem;
+  top: 37%;
+  right: -28%;
+  font-size: 3.6rem;
   font-weight: 800;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -232,14 +232,20 @@
 
 .hero-second {
   position: absolute;
-  top: 30%;
-  right: 18%;
-  font-size: 4rem;
+  top: 45%;
+  right: -42%;
+  font-size: 3.6rem;
   font-weight: 800;
   color: rgba(255,255,255,0.15);
   text-transform: uppercase;
   z-index: 4;
   user-select: none;
+  rotate: -90deg;
+  /* border: 2px solid rgba(255,255,255,0.15); */
+  /* text-shadow:
+    0 0 1px #ffffff20,
+    0 0 6px #fff,
+    0 0 2px #ffffff53; */
 }
 
 /* Thumbnails container */
