@@ -19,7 +19,7 @@
     padding: 30px 0;
     margin-bottom: 40px;
     /* Optional: A subtle glassy background effect */
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.262);  
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     rotate: 2deg;
