@@ -1,0 +1,71 @@
+.branches-section {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* Left vertical box */
+.branches-left {
+  width: 25%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.vertical-title {
+  transform: rotate(-90deg);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #072c27; /* your site bg for contrast */
+}
+
+/* Right side grid */
+.branches-right {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--bg, #072c27); /* keeps site theme */
+}
+
+/* Branch card (map + info) */
+.branch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* makes maps square */
+  overflow: hidden;
+  border-radius: 30%;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Branch info */
+.branch-info {
+  margin-top: 1rem;
+  color: var(--white, #fff);
+}
+
+.branch-place {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.branch-address {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
