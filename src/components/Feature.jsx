@@ -23,16 +23,17 @@ const FeatureSection = () => {
         <span>STARBUCKS</span>
         <span>STARBUCKS</span>
         <span>STARBUCKS</span>
+        {/* <span>STARBUCKS</span> */}
       </div>
 
       {/* Editable left paragraph */}
       <p className="feature-text feature-text-left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, officia illum ratione cupiditate atque fugit placeat ipsa, nam error consectetur perspiciatis alias!
       </p>
 
       {/* Editable right paragraph */}
       <p className="feature-text feature-text-right">
-        Discover the perfect blend crafted with passion.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fugiat quam, facilis minima nisi earum optio libero ad molestias?
       </p>
 
       {/* Left Arrow */}

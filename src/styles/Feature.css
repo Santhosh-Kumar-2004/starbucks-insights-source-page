@@ -4,7 +4,7 @@
   /* padding: 4rem 1rem; */
   overflow: hidden;
   margin-top: 30px;
-  height: 120vh;
+  height: 130vh;
 }
 
 /* Big Title */
@@ -52,22 +52,24 @@
   position: relative;
   /* bottom: 0;
   left: 0; */
-  /* width: 110vw; */
+  width: 120vw;
   background: var(--accent);
   color: var(--white);
   font-weight: bold;
   font-size: 3rem;
   display: flex;
   justify-content: space-around;
-  padding: 0.8rem 10px;
-  transform: rotate(-9deg); /* rotate slightly */
+  padding: 1rem 10px;
+  transform: rotate(-8deg); /* rotate slightly */
   z-index: 3;
   margin-top: -9rem;
+   margin-left: -10vw;
 }
 
 .feature-tape span {
   white-space: nowrap;
-  margin: 0 1rem;
+  margin-right: 120px;
+  /* margin: 0 0.5rem; */
   /* margin-top: ; */
 }
 
@@ -79,12 +81,14 @@
   line-height: 1.4;
   color: #fff;
 }
+
 .feature-text-left {
-  top: 40%;
+  top: 50%;
   left: 5%;
 }
+
 .feature-text-right {
-  top: 40%;
+  top: 80%;
   right: 5%;
 }
 
