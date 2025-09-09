@@ -13,48 +13,53 @@
 }
 
 /* Top Navigation / Category Bar */
+/* Top Navigation / Category Bar */
 .product-navbar {
-  background-color: #00704a; /* Starbucks green */
-  padding: 35px 20px;
-  display: flex;
-  max-width: 600px;
-  /* text-align: center;
-  align-items: center; */
-  align-self: center;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 60px;
-
-  border-radius: 15% 0% 50% 0%;
-  margin-top: 30px;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    /* Optional: A subtle glassy background effect */
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .category-list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  /* max-width: 600px; */
-  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Adds space between items */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
+/* Individual category item */
 .category-item {
-  position: relative;
-  padding: 10px 25px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: #c8e6c9; /* Lighter green for inactive */
-  text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #b0b0b0; /* Light gray for inactive items */
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 50px; /* Fully rounded buttons */
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    user-select: none;
 }
 
+/* Active (selected) category item */
 .category-item.active {
-  color: #fff;
-  background-color: #004d33; /* Darker green for active tab background */
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #28a745; /* A vibrant green for the selected item */
+    color: #ffffff; /* White text */
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Hover effect for items */
+.category-item:not(.active):hover {
+    color: #ffffff; /* White text on hover */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .category-item.active::before { /* Rounded tab effect */
