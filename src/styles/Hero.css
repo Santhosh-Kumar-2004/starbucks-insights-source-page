@@ -30,6 +30,7 @@
   flex: 1;
   text-align: left;
   animation: fadeInDown 1s ease-out;
+  position: relative;
 }
 
 .hero-title {
@@ -71,6 +72,7 @@
   color: white;
   line-height: 1.6;
   max-width: 500px;
+  z-index: 2;
   /* margin-bottom: 30px; */
 }
 
@@ -89,7 +91,7 @@
 }
 
 .rate {
-  color: var(--accent);
+  color: var(--green);
   font-size: 3rem;
   margin-left: 20px;
   margin-top: 10px;
@@ -201,6 +203,18 @@
   width: 70px;
   animation-delay: 1.5s;
   rotate: -40deg;
+}
+
+.leaf_left {
+  position: absolute;
+  top: 20%;   /* adjust where you want the leaf */
+  left: -40px; /* move outside if needed */
+  width: 120px; /* resize as needed */
+  opacity: 0.6; /* make it subtle */
+  z-index: -1;  /* push it behind text */
+  rotate: 30deg;
+  animation: float 5s ease-in-out infinite;
+
 }
 
 /* Thumbnails container */
