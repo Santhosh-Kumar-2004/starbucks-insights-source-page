@@ -27,7 +27,7 @@ const Product = () => {
           <li className="category-item">FOOD</li>
           <li className="category-item">AT HOME</li>
           <li className="category-item">MERCHANDISE</li>
-        </ul>
+        </ul> 
       </nav>
 
       <div className="product-carousel-wrapper"> {/* New wrapper for Swiper */}
