@@ -217,6 +217,31 @@
 
 }
 
+.hero-final {
+  position: absolute;
+  top: 39%;
+  right: -30%;
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  z-index: 4;
+  user-select: none;
+  rotate: -90deg;
+}
+
+.hero-second {
+  position: absolute;
+  top: 30%;
+  right: 18%;
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.15);
+  text-transform: uppercase;
+  z-index: 4;
+  user-select: none;
+}
+
 /* Thumbnails container */
 .thumbs {
   position: absolute;
