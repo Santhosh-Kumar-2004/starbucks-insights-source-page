@@ -151,12 +151,13 @@
   display: flex;
   justify-content: space-around;
   padding: 1rem 10px;
-  /* transform: rotate(-8deg);  */
+  transform: rotate(2deg); 
   /* z-index: 3; */
   /* margin-top: -9rem; */
    /* margin-left: 0; */
    margin-bottom: 50px;
    margin-top: 10%;
+   margin-right: -2px;
 }
 
 .feature-tape2 span {
