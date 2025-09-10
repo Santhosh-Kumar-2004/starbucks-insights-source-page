@@ -16,8 +16,7 @@ const FinalSection = () => {
         <div className="final-left">
           <img src={Logo2} alt="Starbucks Logo" className="logo-small" />
           <p>
-            Starbucks has always been about great coffee. And great experiences. 
-            Together, we make moments special.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam ex veritatis atque, nihil animi eligendi sed, possimus quae accusamus, veniam ad explicabo? Accusantium labore at esse, ducimus explicabo quod. possimus quae accusamus!
           </p>
         </div>
 
