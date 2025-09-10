@@ -7,6 +7,7 @@
     align-items: center;
     min-height: 80vh;
     padding: 80px 5%;
+    justify-content: center;
     /* background-color: #f8f8f8; */
 }
 
@@ -20,8 +21,10 @@
     position: relative;
     background-color: white;
     width: 200px;
-    height: 700px;
+    height: 550px;
     margin: auto 50px;
+    letter-spacing: 5px;
+    margin-top: 90px;
     /* padding-right: 100px; */
 }
 
@@ -44,6 +47,7 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     padding-left: 50px; /* Space between the vertical title and the grid */
+    max-height: 500px;
 }
 
 /* Individual branch card */
@@ -53,6 +57,8 @@
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    /* height: 300px; */
 }
 
 .branch-card:hover {
@@ -64,30 +70,33 @@
 .map-container {
     width: 100%;
     height: 200px;
+    
 }
 
 .map {
     width: 100%;
     height: 100%;
     border: none;
+    
 }
 
 /* Branch info */
 .branch-info {
     padding: 20px;
     text-align: left;
+    background-color: var(--green);
 }
 
 .branch-place {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    /* color: #333; */
     margin-bottom: 5px;
 }
 
 .branch-address {
     font-size: 0.9rem;
-    color: #777;
+    /* color: #777; */
     margin: 0;
 }
 
