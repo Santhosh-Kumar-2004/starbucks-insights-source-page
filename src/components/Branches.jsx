@@ -11,7 +11,7 @@ const branches = [
 const Branches = () => {
   return (
     <>
-      <h1 className="branch-title">Our Service <br />Locations</h1>
+      <h1 className="branch-title">Our Service <br /><b className="highlight">Locations</b></h1>
       <section className="branches-section">
         {/* Left side vertical box */}
         <div className="branches-left">
