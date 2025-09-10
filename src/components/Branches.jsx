@@ -39,7 +39,15 @@ const Branches = () => {
           ))}
           <h4 className="more">More</h4>
         </div>
+        
       </section>
+      <div className="feature-tape">
+        <span>STARBUCKS</span>
+        <span>STARBUCKS</span>
+        <span>STARBUCKS</span>
+        <span>STARBUCKS</span>
+        {/* <span>STARBUCKS</span> */}
+      </div>
     </>
   );
 };
