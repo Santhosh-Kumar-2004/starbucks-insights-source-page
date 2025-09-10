@@ -1,6 +1,9 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import "../styles/Footer.css";
+import Logo1 from "../assets/starbucks_bones.png";
+import Logo2 from "../assets/starbucks_coloured.png";
+import Logo3 from "../assets/starbucks_fuck.png";
 
 const FinalSection = () => {
   return (
@@ -11,7 +14,7 @@ const FinalSection = () => {
       <div className="final-card">
         {/* Left Section */}
         <div className="final-left">
-          <img src="/assets/logo-small.png" alt="Starbucks Logo" className="logo-small" />
+          <img src={Logo2} alt="Starbucks Logo" className="logo-small" />
           <p>
             Starbucks has always been about great coffee. And great experiences. 
             Together, we make moments special.
@@ -24,7 +27,7 @@ const FinalSection = () => {
             We connect people through coffee and strive to inspire and nurture 
             the human spirit.
           </p>
-          <img src="/assets/logo-big.png" alt="Starbucks Big Logo" className="logo-big" />
+          <img src={Logo3} alt="Starbucks Big Logo" className="logo-big" />
         </div>
 
         {/* Right Section */}
