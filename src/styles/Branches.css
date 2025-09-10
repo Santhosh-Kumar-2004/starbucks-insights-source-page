@@ -140,10 +140,10 @@
 }
 
 .feature-tape2 {
-  position: relative;
+  /* position: relative; */
   /* bottom: 0;
   left: 0; */
-  width: 120vw;
+  /* width: 800vw; */
   background: var(--accent);
   color: var(--white);
   font-weight: bold;
@@ -152,18 +152,19 @@
   justify-content: space-around;
   padding: 1rem 10px;
   /* transform: rotate(-8deg);  */
-  z-index: 3;
+  /* z-index: 3; */
   /* margin-top: -9rem; */
-   margin-left: -10vw;
+   /* margin-left: 0; */
    margin-bottom: 50px;
    margin-top: 10%;
 }
 
 .feature-tape2 span {
   white-space: nowrap;
-  margin-right: 120px;
+  /* margin-right: 120px; */
   /* margin: 0 0.5rem; */
   /* margin-top: ; */
+  padding-right: 10px;
 }
 
 /* Responsive adjustments for the new layout */
