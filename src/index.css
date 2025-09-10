@@ -114,3 +114,23 @@ body::before {
   background: var(--deep-green);
   min-height: 100vh;
 }
+
+.last-title {
+  position: fixed;        /* Sticks to viewport, not layout */
+  bottom: 0;              /* Push to very bottom */
+  left: 50%;              /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  
+  font-size: 18vw;        /* Very big, scales with screen */
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.05); /* Low opacity effect */
+  line-height: 1;
+  
+  width: 120vw;            /* Full width */
+  height: 50vh;           /* Covers half screen height */
+  text-align: center;
+  
+  z-index: 9999;          /* On top of everything */
+  pointer-events: none;   /* Don’t block clicks on content */
+}

@@ -27,6 +27,7 @@ function App() {
       <Branches />
       <Contact />
       <FinalSection />
+      <h1 className='last-title'>Contact</h1>
       {/* <div className="page">
         <h1>Starbucks Clone</h1>
       </div> */}

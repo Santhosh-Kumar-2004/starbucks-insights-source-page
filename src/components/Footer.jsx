@@ -43,6 +43,7 @@ const FinalSection = () => {
             Stay updated with our latest offers and news. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
           </p>
         </div>
+        {/* <h1 className="background-text">CONTACT</h1> */}
       </div>
     </div>
   );
