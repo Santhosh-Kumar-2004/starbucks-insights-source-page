@@ -139,6 +139,33 @@
     margin-left: 420px;
 }
 
+.feature-tape2 {
+  position: relative;
+  /* bottom: 0;
+  left: 0; */
+  width: 120vw;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 10px;
+  /* transform: rotate(-8deg);  */
+  z-index: 3;
+  /* margin-top: -9rem; */
+   margin-left: -10vw;
+   margin-bottom: 50px;
+   margin-top: 10%;
+}
+
+.feature-tape2 span {
+  white-space: nowrap;
+  margin-right: 120px;
+  /* margin: 0 0.5rem; */
+  /* margin-top: ; */
+}
+
 /* Responsive adjustments for the new layout */
 @media (max-width: 768px) {
     .branch-card {

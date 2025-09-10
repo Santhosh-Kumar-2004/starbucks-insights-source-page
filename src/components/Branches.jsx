@@ -41,7 +41,7 @@ const Branches = () => {
         </div>
         
       </section>
-      <div className="feature-tape">
+      <div className="feature-tape2">
         <span>STARBUCKS</span>
         <span>STARBUCKS</span>
         <span>STARBUCKS</span>
