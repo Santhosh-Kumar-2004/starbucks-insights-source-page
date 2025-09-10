@@ -25,7 +25,7 @@ const Branches = () => {
               <iframe
                 title={branch.place}
                 src="https://maps.google.com/maps?q=Starbucks&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameBorder="0"
+                // frameBorder="0"
                 className="map"
               ></iframe>
             </div>

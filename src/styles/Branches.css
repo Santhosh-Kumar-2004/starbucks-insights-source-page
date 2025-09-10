@@ -1,71 +1,116 @@
+/* Branches.css */
+
+/* Main section container */
 .branches-section {
-  display: flex;
-  width: 100vw;
-  min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 5%;
+    background-color: #f8f8f8; /* Light background for contrast */
 }
 
-/* Left vertical box */
+/* Left side vertical title container */
 .branches-left {
-  width: 25%;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100px; /* Fixed width for the vertical title column */
+    height: 100%;
+    position: relative;
 }
 
+/* Vertical title styling */
 .vertical-title {
-  transform: rotate(-90deg);
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 5px;
-  color: #072c27; /* your site bg for contrast */
+    font-size: 3rem;
+    font-weight: 800;
+    color: #28a745;
+    white-space: nowrap;
+    transform: rotate(-90deg); /* Rotates the text 90 degrees counter-clockwise */
+    transform-origin: center center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
-/* Right side grid */
+/* Right side maps grid */
 .branches-right {
-  width: 75%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
-  padding: 2rem;
-  background: var(--bg, #072c27); /* keeps site theme */
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding-left: 50px; /* Space between the vertical title and the grid */
 }
 
-/* Branch card (map + info) */
+/* Individual branch card */
 .branch-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.branch-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Map container */
 .map-container {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* makes maps square */
-  overflow: hidden;
-  border-radius: 30%;
+    width: 100%;
+    height: 200px;
 }
 
 .map {
-  width: 100%;
-  height: 100%;
-  border: none;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* Branch info */
 .branch-info {
-  margin-top: 1rem;
-  color: var(--white, #fff);
+    padding: 20px;
+    text-align: left;
 }
 
 .branch-place {
-  font-size: 1.2rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
 }
 
 .branch-address {
-  font-size: 0.9rem;
-  opacity: 0.8;
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .branches-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .branches-left {
+        flex: none;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .vertical-title {
+        transform: rotate(0deg);
+        font-size: 2.5rem;
+    }
+
+    .branches-right {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .vertical-title {
+        font-size: 2rem;
+    }
 }
