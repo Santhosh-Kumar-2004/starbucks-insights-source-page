@@ -15,7 +15,7 @@ const Branches = () => {
       <section className="branches-section">
         {/* Left side vertical box */}
         <div className="branches-left">
-          <h2 className="vertical-title">OUR BRANCHES</h2>
+          <h2 className="vertical-title">BRANCHES</h2>
         </div>
 
         {/* Right side maps grid */}
@@ -37,6 +37,7 @@ const Branches = () => {
               </div>
             </div>
           ))}
+          <h4 className="more">More</h4>
         </div>
       </section>
     </>

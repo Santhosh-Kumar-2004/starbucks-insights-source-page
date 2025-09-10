@@ -59,10 +59,11 @@
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 50px;
     padding-left: 50px; /* Space between the vertical title and the grid */
     max-height: 500px;
     text-align: center;
+    /* gap: 20px; */
 }
 
 /* Branches.css - Updated Section */
@@ -70,19 +71,19 @@
 /* Individual branch card - now a flex container for horizontal layout */
 .branch-card {
     /* background-color: #fff; */
-    border-radius: 12px; /* Changed from 20% for a softer look */
+    /* border-radius: ;  */
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: unset; /* Remove fixed width to allow flex to control it */
     display: flex; /* Make it a flex container */
     align-items: center; /* Vertically align items */
-    height: 250px;
+    height: 200px;
 }
 
 .branch-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); */
 }
 
 /* Map container */
@@ -97,6 +98,7 @@
     width: 100%;
     height: 100%;
     border: none;
+    border-radius: 20%;
 }
 
 /* Branch info - now on the right */
@@ -104,25 +106,37 @@
     flex: 1; /* Takes the remaining space */
     padding: 15px; /* Slightly reduced padding */
     text-align: left;
-    /* background-color: #e6ffe6;  */
-    color: #333; /* Dark text for readability on light green */
+    background-color: var(--green); 
+    color: var(--white); 
     display: flex; /* Use flexbox for internal alignment */
     flex-direction: column;
     justify-content: center; /* Vertically center the text */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
 }
 
 .branch-place {
     font-size: 1.3rem; /* Slightly smaller for better fit */
     font-weight: 700;
-    color: #28a745; /* Green for place name */
+    color: var(--white); /* Green for place name */
     margin-bottom: 5px;
 }
 
 .branch-address {
     font-size: 0.85rem; /* Slightly smaller for address */
-    color: #555; /* Darker gray for address */
+    color: var(--white); /* Darker gray for address */
     margin: 0;
     /* margin-left: 20px; Removed, as it won't be needed with new layout */
+}
+
+.more {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: wavy underline;
+    margin-left: 420px;
 }
 
 /* Responsive adjustments for the new layout */
