@@ -60,15 +60,18 @@
     text-align: center;
 }
 
-/* Individual branch card */
+/* Branches.css - Updated Section */
+
+/* Individual branch card - now a flex container for horizontal layout */
 .branch-card {
-    background-color: #fff;
-    border-radius: 20%;
+    /* background-color: #fff; */
+    border-radius: 12px; /* Changed from 20% for a softer look */
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
-    /* height: 300px; */
+    width: unset; /* Remove fixed width to allow flex to control it */
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Vertically align items */
 }
 
 .branch-card:hover {
@@ -78,37 +81,59 @@
 
 /* Map container */
 .map-container {
-    width: 100%;
-    height: 200px;
-    
+    flex: 0 0 50%; /* Map takes 50% of the card width */
+    height: 150px; /* Adjusted height for a more compact look */
+    /* Removed width: 100% here as flex controls it */
 }
 
 .map {
     width: 100%;
     height: 100%;
     border: none;
-    
 }
 
-/* Branch info */
+/* Branch info - now on the right */
 .branch-info {
-    padding: 20px;
+    flex: 1; /* Takes the remaining space */
+    padding: 15px; /* Slightly reduced padding */
     text-align: left;
-    background-color: var(--green);
+    /* background-color: #e6ffe6;  */
+    color: #333; /* Dark text for readability on light green */
+    display: flex; /* Use flexbox for internal alignment */
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
 }
 
 .branch-place {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Slightly smaller for better fit */
     font-weight: 700;
-    /* color: #333; */
+    color: #28a745; /* Green for place name */
     margin-bottom: 5px;
 }
 
 .branch-address {
-    font-size: 0.9rem;
-    /* color: #777; */
+    font-size: 0.85rem; /* Slightly smaller for address */
+    color: #555; /* Darker gray for address */
     margin: 0;
-    margin-left: 20px;
+    /* margin-left: 20px; Removed, as it won't be needed with new layout */
+}
+
+/* Responsive adjustments for the new layout */
+@media (max-width: 768px) {
+    .branch-card {
+        flex-direction: column; /* Stack map and info vertically on smaller screens */
+        width: 100%; /* Take full width */
+    }
+
+    .map-container {
+        height: 180px; /* Give more height when stacked */
+        flex: none; /* Remove flex sizing */
+    }
+
+    .branch-info {
+        padding: 15px 20px;
+        text-align: center; /* Center text when stacked */
+    }
 }
 
 /* Responsive adjustments */
