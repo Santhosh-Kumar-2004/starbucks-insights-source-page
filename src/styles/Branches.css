@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    padding: 80px 5%;
+    padding: 10px 5%;
     justify-content: center;
     /* background-color: #f8f8f8; */
 }
@@ -26,6 +26,15 @@
     letter-spacing: 5px;
     margin-top: 100px;
     /* padding-right: 100px; */
+}
+
+.branch-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 20px;
+    color: var(--white);
+    text-transform: uppercase;
 }
 
 /* Vertical title styling */
