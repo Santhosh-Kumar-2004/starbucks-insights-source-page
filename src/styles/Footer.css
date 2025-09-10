@@ -112,14 +112,38 @@
 /* Background big text */
 .background-text {
   position: absolute;
-  bottom: -15%;
+  /* bottom: -7%; */
   left: 50%;
+  top: 55%;
   transform: translateX(-50%);
-  font-size: 12vw;
+  font-size: 18vw;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(255, 255, 255, 0.185);
   letter-spacing: 5px;
   white-space: nowrap;
-  z-index: 1;
+  z-index: 9999;
   pointer-events: none;
 }
+
+.footer-container {
+  /* This container controls the full width and positioning */
+  position: relative; /* All children are positioned relative to this */
+  width: 100vw; /* Take up 100% of the viewport width */
+}
+
+.footer-text {
+  /* This is your actual text element */
+  position: absolute; /* Position relative to the .footer-container */
+  bottom: 0; /* Stick it to the bottom of its parent container */
+  width: 100%; /* Cover the full width of the parent */
+  z-index: 9999; /* Ensure it is on top of everything */
+  
+  /* Make the text big and style it */
+  font-size: 5vw; /* Adjusts font size with the viewport width */
+  text-align: center; /* Horizontally center the text */
+  color: white; /* Example styling */
+  /* background-color: black; */
+  padding: 10px; /* Add some spacing */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+

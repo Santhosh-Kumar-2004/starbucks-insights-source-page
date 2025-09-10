@@ -7,46 +7,46 @@ import Logo3 from "../assets/starbucks_fuck.png";
 import Logo4 from "../assets/starbucks.svg";
 
 const FinalSection = () => {
-  return (
-    <div className="final-section">
-      {/* Background text */}
-      <h1 className="background-text">CONTACT</h1>
+    return (
+        <div className="final-section">
+            {/* Background text */}
+            <h1 className="background-text">CONTACT</h1>
 
-      <div className="final-card">
-        {/* Left Section */}
-        <div className="final-left">
-          <img src={Logo2} alt="Starbucks Logo" className="logo-small" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam ex veritatis atque, nihil animi eligendi sed, possimus quae accusamus, veniam ad explicabo? Accusantium labore at esse, ducimus explicabo quod. possimus quae accusamus veritatis!!
-          </p>
-        </div>
+            <div className="final-card">
+                {/* Left Section */}
+                <div className="final-left">
+                    <img src={Logo2} alt="Starbucks Logo" className="logo-small" />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam ex veritatis atque, nihil animi eligendi sed, possimus quae accusamus, veniam ad explicabo? Accusantium labore at esse, ducimus explicabo quod. possimus quae accusamus veritatis!!
+                    </p>
+                </div>
 
-        {/* Middle Section */}
-        <div className="final-middle">
-          <p className="middle-text">
-            We connect people through coffee and strive to inspire and nurture 
-            the human spirit.
-          </p>
-          <img src={Logo3} alt="Starbucks Big Logo" className="logo-big" />
-        </div>
+                {/* Middle Section */}
+                <div className="final-middle">
+                    <p className="middle-text">
+                        We connect people through coffee and strive to inspire and nurture
+                        the human spirit.
+                    </p>
+                    <img src={Logo3} alt="Starbucks Big Logo" className="logo-big" />
+                </div>
 
-        {/* Right Section */}
-        <div className="final-right">
-          <h3>Subscribe</h3>
-          <div className="subscribe-box">
-            <input type="email" placeholder="Enter your email" />
-            <button className="subscribe-btn">
-              <FiArrowRight size={20} />
-            </button>
-          </div>
-          <p className="subscribe-note">
-            Stay updated with our latest offers and news. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-          </p>
+                {/* Right Section */}
+                <div className="final-right">
+                    <h3>Subscribe</h3>
+                    <div className="subscribe-box">
+                        <input type="email" placeholder="Enter your email" />
+                        <button className="subscribe-btn">
+                            <FiArrowRight size={20} />
+                        </button>
+                    </div>
+                    <p className="subscribe-note">
+                        Stay updated with our latest offers and news. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
+                    </p>
+                    <h1 className="background-text">CONTACT</h1>
+                </div>
+            </div>
         </div>
-        {/* <h1 className="background-text">CONTACT</h1> */}
-      </div>
-    </div>
-  );
+    );
 };
 
 export default FinalSection;
