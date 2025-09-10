@@ -21,7 +21,7 @@ const Contact = () => {
 
                 {/* Right Card - Thank You */}
                 <div className="contact-card right-card">
-                    <h2 className="contact-sec">Thank You</h2>
+                    <h2 className="contact-sec">Thank You!</h2>
                     <p className="contact-text">We appreciate your interest in Starbucks. Stay connected with us!</p>
                     <div className="arrow-icon">
                         <FaArrowRight />
