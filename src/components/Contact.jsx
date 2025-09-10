@@ -11,7 +11,9 @@ const Contact = () => {
                 <div className="contact-card left-card">
                     <h2 className="contact-title">Contact</h2>
                     <form className="contact-form">
+                        <label htmlFor="name">Name</label>
                         <input type="text" placeholder="Your Name" className="contact-input" />
+                        <label htmlFor="email">Email</label>
                         <input type="email" placeholder="Your Email" className="contact-input" />
                         <button type="submit" className="submit-btn">Submit</button>
                     </form>
