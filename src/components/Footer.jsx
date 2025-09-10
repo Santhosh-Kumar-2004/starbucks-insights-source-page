@@ -16,7 +16,7 @@ const FinalSection = () => {
         <div className="final-left">
           <img src={Logo2} alt="Starbucks Logo" className="logo-small" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam ex veritatis atque, nihil animi eligendi sed, possimus quae accusamus, veniam ad explicabo? Accusantium labore at esse, ducimus explicabo quod. possimus quae accusamus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam ex veritatis atque, nihil animi eligendi sed, possimus quae accusamus, veniam ad explicabo? Accusantium labore at esse, ducimus explicabo quod. possimus quae accusamus veritatis!!
           </p>
         </div>
 
