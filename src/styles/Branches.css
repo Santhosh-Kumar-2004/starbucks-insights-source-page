@@ -29,6 +29,10 @@
     /* padding-right: 100px; */
 }
 
+.branch {
+  color: var(--green);
+}
+
 .branch-title {
     text-align: center;
     font-size: 4rem;
