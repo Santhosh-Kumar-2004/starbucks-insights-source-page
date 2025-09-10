@@ -4,6 +4,7 @@ import "../styles/Footer.css";
 import Logo1 from "../assets/starbucks_bones.png";
 import Logo2 from "../assets/starbucks_coloured.png";
 import Logo3 from "../assets/starbucks_fuck.png";
+import Logo4 from "../assets/starbucks.svg";
 
 const FinalSection = () => {
   return (
@@ -39,7 +40,7 @@ const FinalSection = () => {
             </button>
           </div>
           <p className="subscribe-note">
-            Stay updated with our latest offers and news.
+            Stay updated with our latest offers and news. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
           </p>
         </div>
       </div>
