@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Contact = () => {
     return (
         <>
-            <h1>Let's Connect</h1>
+            <h1 className="branch-title contact-first">Let's Connect</h1>
             <section className="contact-section">
                 {/* Left Card - Contact Form */}
                 <div className="contact-card left-card">

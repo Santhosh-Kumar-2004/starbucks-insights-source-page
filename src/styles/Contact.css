@@ -28,7 +28,9 @@
   color: #072c27; /* Dark green like your site */
   margin-bottom: 1.5rem;
 }
-
+.contact-first {
+    margin-top: 80px;
+}
 /* Left Card - Form */
 .contact-form {
   display: flex;
