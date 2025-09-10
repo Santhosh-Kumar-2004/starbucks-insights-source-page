@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Product from './components/Product'
 import FeatureSection from './components/Feature';
 import Branches from './components/Branches';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Product />
       <FeatureSection />
       <Branches />
+      <Contact />
       {/* <div className="page">
         <h1>Starbucks Clone</h1>
       </div> */}
