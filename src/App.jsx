@@ -5,6 +5,7 @@ import Product from './components/Product'
 import FeatureSection from './components/Feature';
 import Branches from './components/Branches';
 import Contact from './components/Contact';
+import FinalSection from './components/Footer';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <FeatureSection />
       <Branches />
       <Contact />
+      <FinalSection />
       {/* <div className="page">
         <h1>Starbucks Clone</h1>
       </div> */}

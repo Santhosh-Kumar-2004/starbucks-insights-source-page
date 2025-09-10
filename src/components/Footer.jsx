@@ -1,6 +1,6 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
-import "./FinalSection.css";
+import "../styles/Footer.css";
 
 const FinalSection = () => {
   return (
