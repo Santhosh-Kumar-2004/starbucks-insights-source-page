@@ -10,33 +10,36 @@ const branches = [
 
 const Branches = () => {
   return (
-    <section className="branches-section">
-      {/* Left side vertical box */}
-      <div className="branches-left">
-        <h2 className="vertical-title">OUR BRANCHES</h2>
-      </div>
+    <>
+      <h1>Our Service Locations</h1>
+      <section className="branches-section">
+        {/* Left side vertical box */}
+        <div className="branches-left">
+          <h2 className="vertical-title">OUR BRANCHES</h2>
+        </div>
 
-      {/* Right side maps grid */}
-      <div className="branches-right">
-        {branches.map((branch, index) => (
-          <div className="branch-card" key={index}>
-            <div className="map-container">
-              {/* Google Maps Embed (placeholder, can replace with real) */}
-              <iframe
-                title={branch.place}
-                src="https://maps.google.com/maps?q=Starbucks&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                // frameBorder="0"
-                className="map"
-              ></iframe>
+        {/* Right side maps grid */}
+        <div className="branches-right">
+          {branches.map((branch, index) => (
+            <div className="branch-card" key={index}>
+              <div className="map-container">
+                {/* Google Maps Embed (placeholder, can replace with real) */}
+                <iframe
+                  title={branch.place}
+                  src="https://maps.google.com/maps?q=Starbucks&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  // frameBorder="0"
+                  className="map"
+                ></iframe>
+              </div>
+              <div className="branch-info">
+                <h3 className="branch-place">{branch.place}</h3>
+                <p className="branch-address">{branch.address}</p>
+              </div>
             </div>
-            <div className="branch-info">
-              <h3 className="branch-place">{branch.place}</h3>
-              <p className="branch-address">{branch.address}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 
